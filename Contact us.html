@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <title>Contact info</title>
+    </head>
+    <h1 style="text-align: center; font-family: cursive; background-color: black;color: white; ">Contact Us</h1>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+}
+section .container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+section .container .contactinfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: white;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+section .container .contactinfo h2{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .container .contactinfo .info{
+    position: relative;
+    margin: 8px 0;
+}
+section .container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: -3px 0;
+    cursor: pointer;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+section .container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 10px;
+}
+section .container .contactinfo .info li span:nth-child(1) img{
+    max-width: 100%;  
+}
+section .container .contactinfo .info li span:nth-child(2){
+    color: black;
+    margin-left: 10px;
+    font-weight: 300;
+}
+section .container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 20px;
+}
+section .container .contactinfo .sci{
+    position: relative;
+    display: flex;
+}
+
+section .container .contactinfo .sci li{
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 30px;
+    
+}
+section .container .contactinfo .sci li a{
+    text-decoration: none;
+}
+section .container .contactinfo .sci li a img{
+    filter: invert(1);
+}
+section .container .contactForm{
+    position: absolute;
+    padding: 70px 50px;
+    background: white;
+    width: calc(100% - 150px);
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.6);
+}
+section.container.contactForm.h2{   
+    color: black;
+    font-size: 24px;
+    font-weight: 500;   
+}
+section .container .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+section .container .contactForm .formBox .inputBox{
+    position: relative;
+    margin: 0 0 39px 0;
+}
+section .container .contactForm .formBox .inputBox.w50{
+width: 47%;
+}
+section .container .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+section .container .contactForm .formBox .inputBox input,
+section .container .contactForm .formBox .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+    </style>
+    <body>
+        <section>
+        <div class="container">
+            <div class="contactinfo">
+                <div>
+                    <h2 style="font-family: cursive;">Contact info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="address.png"></span>
+                            <span style="font-family: cursive;">
+                                <br>Lovely Professional University<br>
+                                Jalandhar - Delhi G.T. Road.<br> Phagwara., Jalandhar, Punjab, 144411. 
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="mail.png"></span>
+                            <span style="font-family: cursive;">
+                                <br>
+                                E-mail: alumnicentral@lpu.co.in
+                                <br>
+                                lpu@gmail.com
+                             </span>
+                        </li>
+                        <li>
+                            <span><img src="phone.png"></span>
+                            <span style="font-family: cursive;">
+                                <br>
+                                Phone: +91-7508-183833
+                                <br>Landline: 01824-444665
+                             </span>
+                        </li>
+                    </ul>
+                    <ul class="sci">
+                        <li><a href=""></a><img src="facebook.png" alt=""></li>
+                        <li><a href=""></a><img src="ig.png" alt=""></li>
+                        <li><a href=""></a><img src="twitter.png" alt=""></li>
+                        <li><a href=""></a><img src="pinterest.png" alt=""></li>
+                        <li><a href=""></a><img src="linkedin.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="contactform">
+                    <h2 style="font-family: cursive;">Send a Message</h2>
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span style="font-family: cursive;">First Name</span>
+                        </div>
+                        
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span style="font-family: cursive;">Last Name</span>
+                        </div>
+                          
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span style="font-family: cursive;">Email Address</span>
+                        </div>
+                          
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span style="font-family: cursive;">Mobile Number</span>
+                        </div>
+                          
+                        <div class="inputBox w100">
+                           <textarea name="" required></textarea>
+                            <span style="font-family: cursive;">Write your message here...</span>
+                        </div>
+                       
+                         <div class="inputBox w100">
+                            <input type="submit" value="Send" style="font-family: cursive;">    
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
